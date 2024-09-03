@@ -16,14 +16,14 @@ function remove(e) {
   if (getLocal().includes(deleteditem)) {
     emptyArray = getLocal();
     let updatedTodo = emptyArray.filter((curTodo) => curTodo !== deleteditem);
-    console.log(updatedTodo);
+   
     addLocal(updatedTodo);
     item.style.textDecoration = "line-through";
     item.style.color = "red";
     setInterval(() => {
       item.style.display = "none";
     }, 2000);
-    // console.log(emptyArray);
+  
   }
 }
 
